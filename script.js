@@ -22,10 +22,11 @@ function showPosition(position){
     lon = position.coords.longitude;
     lat = position.coords.latitude;
 
-    const api = "6d055e39ee237af35ca066f35474e9df";
+    // const api = "6d055e39ee237af35ca066f35474e9df";
+    const api = "bd5e378503939ddaee76f12ad7a97608";
 
     const base =
-    `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +`lon=${lon}&appid=6d055e39ee237af35ca066f35474e9df`;
+    `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +`lon=${lon}&appid=bd5e378503939ddaee76f12ad7a97608`;
 
     fetch(base)
     .then((response)=>{
